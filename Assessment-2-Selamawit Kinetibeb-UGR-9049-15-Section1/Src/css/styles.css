@@ -1,0 +1,464 @@
+/* Reset default margin, padding, and set box-sizing to border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Set basic body styles */
+body {
+    background-color: white;
+    color: #333;
+}
+
+/* Header styles: background color, padding, and typography */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Paragraph inside the header with specific styling */
+header p {
+    font-size: 12px;
+    margin: 0;
+    margin-left: 280px;
+}
+
+/* Main header title (h1) styles with alignment */
+header h1 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: start;
+    margin-left: 120px;
+}
+
+/* Navigation list in the header, aligning list items and links */
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    margin-left: 120px;
+}
+
+/* List item styles for the header navigation */
+header ul li {
+    margin-right: 20px;
+}
+
+/* Header navigation link styles */
+header ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(3, 149, 3);
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+/* Header navigation link hover effect */
+header ul li a:hover {
+    background-color: rgb(214, 140, 4);
+}
+
+/* First column of the header: Flexbox for layout */
+header .first-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Business and box colored spans inside h1 */
+h1 span.business {
+    color: rgb(181, 119, 3);
+}
+
+h1 span.box {
+    color: white;
+}
+
+/* Specific class styling for bold and highlighted text */
+.lorem {
+    font-weight: bold;
+}
+
+.lik {
+    color: rgb(230, 170, 60);
+}
+
+.title {
+    color: rgb(84, 193, 84);
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+/* Margin adjustments for elements with the t1 class */
+.t1 {
+    margin-bottom: 30px;
+}
+
+.cn {
+    margin-bottom: 15px;
+    font-size: small;
+}
+
+.cn1 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.nt {
+    color: #888383;
+}
+
+/* Layout for sections with flexbox to position main and aside content */
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+/* Main content area styles */
+section>div {
+    width: 65%;
+    padding: 10px;
+}
+
+/* Aside section styles */
+section .aside {
+    flex: 1 1 30%;
+    padding: 20px 20px 20px 0;
+    margin-left: 20px;
+}
+
+/* Image styles for the section */
+section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+/* Main content area with padding */
+.main-content {
+    margin-left: 0px;
+    padding: 20px;
+    flex: 0 0 60%;
+}
+
+/* Aside heading styles */
+.aside h2 {
+    font-size: 1.4rem;
+    color: rgb(84, 193, 84);
+    margin-bottom: 15px;
+}
+
+/* Aside paragraph styles */
+.aside p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Aside content text styles */
+.aside .cn {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Aside section content style for main text */
+.aside .cn1 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Aside note styles */
+.aside .nt {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Two-column layout for sections */
+.two-column {
+    flex: 0 0 60%;
+}
+
+/* Footer container styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Footer column styles */
+.footer-col {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* Footer heading alignment */
+.hed {
+    text-align: start;
+}
+
+/* Gallery styles in footer */
+.footer-col.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.footer-col.gallery img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+/* About footer column with image and text styling */
+.footer-col.about img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Links in the footer */
+.link2 a {
+    color: green;
+    text-decoration: none;
+}
+
+/* Info styling in footer */
+.info {
+    margin-bottom: 35px;
+}
+
+/* Address styling in footer */
+.address {
+    margin-top: 10px;
+}
+
+/* Footer bottom section styling with layout and colors */
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Footer bottom links layout */
+footer .footer-bottom ul {
+    list-style: none;
+    display: flex;
+    margin-right: 150px;
+}
+
+/* Footer bottom list item styling */
+footer .footer-bottom ul li {
+    margin-left: 20px;
+}
+
+/* Footer bottom link styles with hover effects */
+footer .footer-bottom ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer .footer-bottom ul li a:hover {
+    color: rgb(23, 138, 23);
+}
+
+/* Footer copyright text */
+footer p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/* Copyright section styling */
+.copyright {
+    margin-left: 100px;
+}
+
+/* Contact footer column alignment */
+footer .footer-col.contact {
+    text-align: right;
+}
+
+/* Contact list styling */
+footer .footer-col.contact ul {
+    list-style: none;
+}
+
+/* Contact list item styles */
+footer .footer-col.contact ul li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Contact link styles */
+footer .footer-col.contact ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* Contact link hover effect */
+footer .footer-col.contact ul li a:hover {
+    color: green;
+}
+
+/* Footer bottom p styling */
+footer .footer-bottom p {
+    display: inline-block;
+}
+
+/* Contact link underline style */
+footer .footer-col.contact a {
+    text-decoration: underline;
+    color: rgb(34, 186, 34);
+}
+
+/* Contact link hover effect */
+footer .footer-col.contact a:hover {
+    color: green;
+}
+
+/* Footer bottom anchor styling */
+footer .footer-bottom a {
+    text-decoration: underline;
+    color: rgb(38, 142, 38);
+}
+
+/* Highlighted links with specific color */
+.lik a {
+    color: rgb(227, 149, 5);
+    text-decoration: underline;
+}
+
+.lik a:hover {
+    color: rgb(255, 167, 3);
+}
+
+/* Green-colored link styling */
+.link1 span {
+    color: rgb(23, 138, 23);
+}
+
+.link1 {
+    color: rgb(3, 210, 3);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link1:hover {
+    color: darkgreen;
+}
+
+/* Section layout for flexible content */
+section {
+    display: flex;
+}
+
+/* Form layout with flexbox and input styles */
+form {
+    width: 70%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling for form inputs */
+form label {
+    margin-bottom: 5px;
+}
+
+/* General form input and textarea styles */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Textarea height adjustment */
+textarea {
+    height: 180px;
+}
+
+/* Submit button styling in the form */
+form button {
+    width: 80px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive styling for smaller screen sizes (max-width: 768px) */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Responsive styling for larger screen sizes (min-width: 1024px) */
+@media (min-width: 1024px) {
+
+    section.about,
+    section.contact {
+        padding: 20px;
+        margin-left: 150px;
+    }
+
+    .main-content,
+    .aside {
+        gap: 20px;
+    }
+}
